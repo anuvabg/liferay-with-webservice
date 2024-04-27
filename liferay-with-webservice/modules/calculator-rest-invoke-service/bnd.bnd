@@ -1,0 +1,4 @@
+Bundle-Name: calculator-rest-invoke-service
+Bundle-SymbolicName: calculator-rest-invoke-service
+Bundle-Version: 1.0.0
+Export-Package: com.lr.wsrest.calcservice.api
