@@ -1,0 +1,4 @@
+/.metadata/
+RemoteSystemsTempFiles/.project
+liferay-with-webservice/configs/common/.touch
+liferay-with-webservice/configs/docker/.touch
