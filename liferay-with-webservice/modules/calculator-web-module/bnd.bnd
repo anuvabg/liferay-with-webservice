@@ -1,0 +1,4 @@
+Bundle-Name: calculator-web-module
+Bundle-SymbolicName: calculator-web-module
+Bundle-Version: 1.0.0
+Export-Package: com.lr.web.calc.constants
