@@ -1,10 +1,9 @@
-package com.lr.wsrest.calcservice.api.impl;
+package com.lr.wsrest.calcservice.api;
 
 import com.liferay.petra.string.StringPool;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.util.Validator;
-import com.lr.wsrest.calcservice.api.CalculatorRestInvokeService;
 
 import java.io.BufferedReader;
 import java.io.IOException;
