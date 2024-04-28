@@ -11,6 +11,14 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import org.osgi.service.component.annotations.Component;
+
+@Component(
+		immediate = true, 
+		property = {
+
+		}, 
+		service = CalculatorRestInvokeService.class)
 public class CalculatorRestInvokeServiceImpl implements CalculatorRestInvokeService {
 
 	private Log _logger = LogFactoryUtil.getLog(CalculatorRestInvokeServiceImpl.class);
@@ -32,14 +40,14 @@ public class CalculatorRestInvokeServiceImpl implements CalculatorRestInvokeServ
 				}
 				br.close();
 			}
-			
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		return responseBuffer.toString();
 	}
-	
+
 	private String getURL(String operation, String param1, String param2) {
 		StringBuilder urlBuilder = new StringBuilder("http://localhost:8080/o/calculator-rest");
 		if(Validator.isNotNull(operation) && Validator.isNotNull(param1) && Validator.isNotNull(param2)) {
