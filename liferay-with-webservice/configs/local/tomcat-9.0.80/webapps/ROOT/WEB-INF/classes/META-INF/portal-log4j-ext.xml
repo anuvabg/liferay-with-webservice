@@ -4,7 +4,7 @@
 	<Appenders>
 		<Appender name="CONSOLE" type="Console">
 			<!-- <Layout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L] %m%n" type="PatternLayout" /> -->
-			<Layout disableAnsi="false" pattern="%highlight{%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L] %m%n}{FATAL=red, ERROR=red, WARN=yellow, INFO=green, DEBUG=blue}" type="PatternLayout" />
+			<Layout disableAnsi="false" pattern="%highlight{%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L]}{FATAL=red, ERROR=bright red, WARN=yellow, INFO=cyan, DEBUG=blue} %m%n" type="PatternLayout" />
 		</Appender>
 
 		<Appender fileName="@liferay.home@/logs/liferay.log" filePattern="@liferay.home@/logs/liferay.%d{yyyy-MM-dd}.%i.log.zip" ignoreExceptions="false" name="TEXT_FILE" type="RollingFile">
